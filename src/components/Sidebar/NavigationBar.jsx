@@ -6,6 +6,9 @@ import { SidebarButton } from './SidebarButton';
 const StyledNavigationBar = styled.nav`
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 480px) {
+    order: 1;
+  }
 `;
 
 export const NavigationBar = ({ links }) => {

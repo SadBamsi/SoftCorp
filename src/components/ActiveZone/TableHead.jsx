@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { ListItem } from './ListItem';
 
 const StyledTableHead = styled.div`
   display: grid;
@@ -15,6 +14,9 @@ const StyledTableHead = styled.div`
       line-height: 12px;
       font-weight: 500;
     }
+  }
+  @media screen and (max-width: 480px) {
+    display: none;
   }
 `;
 

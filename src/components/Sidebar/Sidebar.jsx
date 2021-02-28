@@ -12,9 +12,16 @@ const StyledSidebar = styled('aside')`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 10;
   transition: transform 0.3s ease-in-out;
   &.hidden {
     transform: translateX(-100%);
+  }
+  @media screen and (max-width: 480px) {
+    min-width: 320px;
+    top: 70px;
+    background-color: #fff;
+    justify-content: flex-start;
   }
 `;
 
